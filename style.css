@@ -79,12 +79,12 @@ li a:hover::before{
 }
 
 section{
-    min-height: 100vh; 
+    min-height: 15vh; 
     padding: 8rem 12%;
     width: 100%;
     position: relative;
- }
-
+}
+ 
 /* Stats Section */
 .stats {
     display: flex;
@@ -136,7 +136,8 @@ section{
     }
 }
 
- 
+
+
  /* Add this new CSS for section dividers */
  section:not(:last-child)::after {
      content: '';
