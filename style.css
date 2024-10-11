@@ -84,6 +84,58 @@ section{
     width: 100%;
     position: relative;
  }
+
+/* Stats Section */
+.stats {
+    display: flex;
+    align-items: center;            /* Vertically align items in the center */
+    padding: 20px;                  /* Reduced padding for better spacing */
+    margin: 0 auto 20px;
+    background-color: #1e1e1ef4;
+    border-radius: 12px;            /* Rounded corners */      /* Dark background */       
+}
+
+.stat-item {
+    flex: 1;                        /* Equal space for each item */
+    text-align: center;             /* Center text in each item */
+    padding: 0 0px;                /* Reduced horizontal padding */
+}
+
+.stat-item h2 {
+    font-size: 3rem;                /* Larger font for numbers */
+    margin: 0;
+    color: white;                    /* White text for numbers */
+    font-weight: bold;              /* Bold numbers for emphasis */
+}
+
+.stat-item p {
+    font-size: 1.2rem;              /* Font size for labels */
+    color: #bfbfbf;                    /* Slightly lighter text for labels */
+    margin-top: 10px;               /* Add space above the label */
+}
+
+/* Hover Effects */
+.stat-item:hover h2 {
+    background: linear-gradient(to right, #10e763, #11998e);
+    background-clip: text;
+    color: transparent;                 /* Change number color on hover */
+}
+
+.stat-item:hover p {
+    color: #ffffff;                    /* Change label color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;     /* Stack items vertically on small screens */
+        padding: 15px;
+    }
+    .stat-item {
+        margin-bottom: 15px;        /* Add spacing between items */
+    }
+}
+
  
  /* Add this new CSS for section dividers */
  section:not(:last-child)::after {
