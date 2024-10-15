@@ -306,6 +306,76 @@ section{
     background: linear-gradient(to bottom, #28e972, #11998e); 
 }
 
+.certifications {
+    background-color: #ffffff;
+    padding: 5rem 0;
+  }
+  
+  .certifications-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .certifications-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .certifications-table th,
+  .certifications-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .certifications-table th {
+    background-color: #222222;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .certifications-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .certifications-table a {
+    color: #11998e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .certifications-table a:hover {
+    color: #000000;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .certifications-table {
+      font-size: 14px;
+    }
+    
+    .certifications-table th,
+    .certifications-table td {
+      padding: 0.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .certifications-table {
+      font-size: 12px;
+    }
+    
+    .certifications-table th,
+    .certifications-table td {
+      padding: 0.5rem;
+    }
+  }
+
 .projects-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
