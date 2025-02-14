@@ -400,8 +400,11 @@ section{
     transform: translateY(-10px)scale(1.02);
 }
 .projects-card img{
-    width: 20vw;
+    width: 100%; /* Changed from 20vw to 100% */
+    max-width: 400px; /* Added max-width */
+    height: auto; /* Added to maintain aspect ratio */
     border-radius: 1rem;
+    object-fit: cover; /* Added to ensure consistent image display */
 }
 .projects-card:hover .btn{
     border: 2px solid white;
@@ -481,6 +484,28 @@ footer ul li a{
 }
 
 /* Responsive styles */
+@media screen and (max-width: 992px) {
+    .projects-card img {
+        max-width: 350px; /* Instead of using vw units */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-card img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .projects-card img {
+        max-width: 100%; /* Makes image responsive to card width */
+    }
+    
+    .projects-card {
+        padding: 2rem 1rem; /* Reduced padding for smaller screens */
+    }
+}
+
 @media screen and (max-width: 1200px) {
     section {
         padding: 6rem 8%;
